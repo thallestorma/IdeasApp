@@ -1,4 +1,4 @@
-<%= form_with(model: idea, local: true) do |form| %>
+<%= form_with(model: idea, local: true, :html => { :multipart => true}) do |form| %>
   <% if idea.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(idea.errors.count, "error") %> prohibited this idea from being saved:</h2>
@@ -11,19 +11,19 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :name %>
-    <%= form.text_field :name, id: :idea_name %>
+    <%= form.text_field :name, id: :idea_name, :class => 'form-control' %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :description %>
-    <%= form.text_area :description, id: :idea_description %>
+    <%= form.text_area :description, id: :idea_description, :class => 'form-control' %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :picture %>
-    <%= form.text_field :picture, id: :idea_picture %>
+    <%= form.file_field :picture, id: :idea_picture, :class => 'form-control-file' %>
   </div>
 
   <div class="actions">

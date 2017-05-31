@@ -1,3 +1,22 @@
 // Place all the styles related to the ideas controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.container a:hover {
+  color: #F55E55;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.container input[type="submit"] {
+  height: 30px;
+  font-size: 13px;
+  background-color: #F55E55;
+  border: none;
+  color: #FFF;
+}
+
+.thumbnail > img {
+  width: 100%;
+}
