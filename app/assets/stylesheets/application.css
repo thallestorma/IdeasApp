@@ -40,9 +40,9 @@ th {
 }
 
 .navbar a.brand:hover {
-    color: #FFF;
-    background-color: transparent;
-    text-decoration: none;
+  color: #FFF;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 footer {
@@ -51,10 +51,10 @@ footer {
 }
 
 .nav-text {
-    margin: 5px 0 0 0;
+  margin: 5px 0 0 0;
 }
 
 .nav-text > img {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
